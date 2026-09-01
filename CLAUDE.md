@@ -101,6 +101,13 @@ web/
 - Si algún día se borra o recrea el Static Web App, el nombre/resource
   group deben coincidir con los que usa el workflow, o hay que actualizar
   el YAML.
+- **Gotcha real que se dio en este setup:** el subject del token OIDC que
+  emite GitHub para este repo no es el clásico `repo:owner/repo:ref:...`,
+  trae IDs inmutables pegados al owner y al repo
+  (`repo:yonn28@9125679/cocina-sherpa-web@1353061704:ref:refs/heads/main`).
+  Si se recrea la federated credential o se clona este setup en otro repo,
+  hay que mirar el error `AADSTS700213` del primer run fallido para copiar
+  el subject exacto que GitHub está mandando, no asumir el formato clásico.
 
 ## Decisiones de diseño a respetar
 
