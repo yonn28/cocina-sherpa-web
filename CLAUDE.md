@@ -81,9 +81,12 @@ web/
 - Autenticación del pipeline: **service principal con OIDC** (sin client
   secret), app registration `cocina-sherpa-web-gh-actions`
   (appId `60512089-0f14-4ffe-8225-71e3514f7a9b`), con una federated
-  credential limitada a `repo:yonn28/cocina-sherpa-web:ref:refs/heads/main`
-  y rol `Contributor` solo sobre el resource group `rg-cocina-sherpa`
-  (no a nivel de suscripción).
+  credential (nombre `github-cocina-sherpa-web-main`) limitada al subject
+  `repo:yonn28@9125679/cocina-sherpa-web@1353061704:ref:refs/heads/main`
+  (ver el gotcha de IDs inmutables más abajo — el subject clásico
+  `repo:yonn28/cocina-sherpa-web:...` NO funciona) y rol `Contributor`
+  solo sobre el resource group `rg-cocina-sherpa` (no a nivel de
+  suscripción).
 - Secretos en GitHub (Settings → Secrets → Actions):
   `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_SUBSCRIPTION_ID`. No hay
   ningún secreto de larga duración ni el token de despliegue de la SWA
@@ -108,6 +111,19 @@ web/
   Si se recrea la federated credential o se clona este setup en otro repo,
   hay que mirar el error `AADSTS700213` del primer run fallido para copiar
   el subject exacto que GitHub está mandando, no asumir el formato clásico.
+- **Identidad de git para este repo:** los commits van firmados como
+  `Yonny Nova <ycnovac@unal.edu.co>` (config local del repo, no la global
+  de la máquina) — se cambió a propósito porque el repo es público y la
+  identidad por defecto de esta máquina resuelve a un correo de trabajo
+  (`...@nokia.com`), que no debía quedar en el historial público.
+- **Herramientas locales:** en esta máquina se instalaron Azure CLI y
+  GitHub CLI con `winget` (no estaban antes) y quedaron autenticados:
+  `gh` como el usuario `yonn28`, `az` como `yonn28@hotmail.com` con la
+  suscripción `Subscription 2` como default. Si una terminal nueva no
+  encuentra `az`/`gh` en el PATH, usar las rutas completas
+  (`C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin\az.cmd` y
+  `C:\Program Files\GitHub CLI\gh.exe`) — en este entorno el PATH de una
+  sesión no siempre se refresca después de instalar algo nuevo.
 
 ## Decisiones de diseño a respetar
 
