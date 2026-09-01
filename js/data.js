@@ -130,6 +130,51 @@ const CLASES = [
       { src: "img/clase-01/corte-ajo-porro.jpg", alt: "Ajo porro cortado en aros finos" },
     ],
 
+    videos: [
+      {
+        src: "video/clase-01/ajo-porro-enrollado.mp4",
+        poster: "video/clase-01/ajo-porro-enrollado-poster.jpg",
+        titulo: "Cómo enrollar el ajo porro",
+        descripcion: "La hoja bien lavada se coloca sobre la parte blanca y se enrolla como un tabaquito antes de meterla a la olla.",
+      },
+      {
+        src: "video/clase-01/sofrito-jengibre-ajo.mp4",
+        poster: "video/clase-01/sofrito-jengibre-ajo-poster.jpg",
+        titulo: "Sofrito de jengibre y ajo",
+        descripcion: "Se sofríe a velocidad media para que el ajo no se queme ni se amargue, y luego entra la cebolla y la sal.",
+      },
+      {
+        src: "video/clase-01/metodo-concentracion.mp4",
+        poster: "video/clase-01/metodo-concentracion-poster.jpg",
+        titulo: "Método de concentración, en vivo",
+        descripcion: "Sellar la pechuga en el sartén bien caliente para que los jugos se queden adentro — el ejemplo real del concepto de concentración.",
+      },
+      {
+        src: "video/clase-01/ajonjoli-sal-himalaya.mp4",
+        poster: "video/clase-01/ajonjoli-sal-himalaya-poster.jpg",
+        titulo: "Ajonjolí negro y sal del Himalaya",
+        descripcion: "Por qué se usa ajonjolí negro y no blanco para que se note el contraste, y por qué la sal del Himalaya es solo decorativa.",
+      },
+      {
+        src: "video/clase-01/impulsador-de-sabor.mp4",
+        poster: "video/clase-01/impulsador-de-sabor-poster.jpg",
+        titulo: "¿Qué es un impulsador de sabor?",
+        descripcion: "No es sal ni azúcar: simplemente resalta los sabores que ya están en el plato.",
+      },
+      {
+        src: "video/clase-01/emplatado-en-silencio.mp4",
+        poster: "video/clase-01/emplatado-en-silencio-poster.jpg",
+        titulo: "Emplatando en silencio",
+        descripcion: "Por qué no se debe hablar sobre la comida ya servida al momento de emplatar.",
+      },
+      {
+        src: "video/clase-01/historia-de-la-arepa.mp4",
+        poster: "video/clase-01/historia-de-la-arepa-poster.jpg",
+        titulo: "La historia de la arepa y la crema chantilly",
+        descripcion: "De dónde viene realmente la arepa, y la anécdota del origen de la crema chantilly en un banquete real.",
+      },
+    ],
+
     transcripcionArchivo: "transcripciones/clase-01/completa.txt",
 
     transcripcion: `Cuando vayas a cortar el apio, vas a cortar solo la punta de la hoja y la hoja se va a un pote aparte, no a la caneca de basura (esa es "incontaminante" para el área de trabajo). La cebolla se corta de arriba hacia abajo sin separar la base, se le quita la primera cáscara por estar oxidada, y luego se hacen cortes de aproximadamente un centímetro.

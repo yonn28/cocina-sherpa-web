@@ -43,6 +43,7 @@ web/
   js/data.js              ÚNICA fuente de contenido — arreglo CLASES
   js/app.js               router (hash) + renderizado + lightbox
   img/clase-XX/            fotos de cada clase
+  video/clase-XX/          clips de video comprimidos + su poster (miniatura) .jpg
   transcripciones/clase-XX/completa.txt   copia de respaldo de la transcripción cruda
 ```
 
@@ -57,6 +58,30 @@ web/
   las pestañas dentro del detalle (Conceptos/Materiales/Pasos/
   Recetas/Galería/Transcripción) son estado de JS, no van en la URL.
 
+## Videos (agregado el 2026-08-31, después del primer despliegue)
+
+Los WhatsApp Video originales de la clase son verticales (~478x850,
+9:16), pesan entre 1.5 MB y 48 MB, y traen mucho ruido (varios eran solo
+"suscríbete y dale like" de fondo de YouTube grabado sin querer — esos
+se descartan). Los que sí muestran proceso real (cortes, sofrito,
+emplatado, anécdotas) se recomprimen antes de subirlos al repo, si no el
+repo pesa demasiado y el sitio carga lento:
+
+```bash
+ffmpeg -y -i "original.mp4" -vf "scale=360:-2" -c:v libx264 -crf 30 \
+  -preset veryfast -c:a aac -b:a 96k -movflags +faststart "salida.mp4"
+
+ffmpeg -y -ss 00:00:01 -i "original.mp4" -frames:v 1 -vf "scale=360:-2" \
+  "salida-poster.jpg"
+```
+
+Eso bajó los 7 videos elegidos de la clase 1 de ~127 MB a ~30 MB en
+total, manteniéndolos perfectamente viables para verse en el navegador.
+Cada video en `js/data.js` (arreglo `videos` dentro de cada clase) lleva
+`src`, `poster` (el jpg del segundo 1, para no cargar el video hasta que
+el usuario le da play — por eso `<video preload="none">` en `app.js`),
+`titulo` y `descripcion`.
+
 ## Cómo agregar una clase nueva
 
 1. En `../clase1/` (o donde queden los nuevos audios/videos de la
@@ -64,10 +89,14 @@ web/
    transcripciones.
 2. Crear `img/clase-02/` y copiar ahí las fotos que valga la pena
    mostrar (mise en place, cortes, pizarra/apuntes si hay).
+2b. Crear `video/clase-02/`, recomprimir con ffmpeg los clips que
+   muestren proceso real (ver sección "Videos" más arriba) y generar su
+   poster. Descartar los videos que sean solo ruido de fondo.
 3. Copiar el objeto de `clase-01` dentro de `CLASES` en `js/data.js`,
    cambiar `id` a `"clase-02"`, `numero` a `2`, y llenar todos los
    campos a partir de la transcripción nueva (materiales, conceptos,
-   pasos, recetas, galería, y el texto completo en `transcripcion`).
+   pasos, recetas, galería, videos, y el texto completo en
+   `transcripcion`).
 4. Opcional: copiar la transcripción cruda a
    `transcripciones/clase-02/completa.txt` como respaldo.
 5. Guardar y recargar `index.html`. No hace falta tocar HTML ni CSS.

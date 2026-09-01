@@ -57,6 +57,7 @@ const TABS = [
   { key: "pasos", label: "Paso a paso" },
   { key: "recetas", label: "Recetas" },
   { key: "galeria", label: "Galería" },
+  { key: "videos", label: "Videos" },
   { key: "transcripcion", label: "Transcripción" },
 ];
 
@@ -108,6 +109,21 @@ function vistaClase(id) {
       `).join("")}
     </div>`;
 
+  const panelVideos = `
+    <div class="videos-grid">
+      ${(c.videos || []).map((v) => `
+        <figure class="video-card">
+          <video controls preload="none" poster="${v.poster}" playsinline>
+            <source src="${v.src}" type="video/mp4">
+          </video>
+          <figcaption>
+            <h3>${escapeHtml(v.titulo)}</h3>
+            <p>${escapeHtml(v.descripcion)}</p>
+          </figcaption>
+        </figure>
+      `).join("")}
+    </div>`;
+
   const parrafosTranscripcion = (c.transcripcion || "")
     .split(/\n\s*\n/)
     .map((p) => `<p>${escapeHtml(p.trim())}</p>`)
@@ -121,6 +137,7 @@ function vistaClase(id) {
     pasos: panelPasos,
     recetas: panelRecetas,
     galeria: panelGaleria,
+    videos: panelVideos,
     transcripcion: panelTranscripcion,
   };
 
