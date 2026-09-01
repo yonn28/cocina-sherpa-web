@@ -72,6 +72,36 @@ web/
    `transcripciones/clase-02/completa.txt` como respaldo.
 5. Guardar y recargar `index.html`. No hace falta tocar HTML ni CSS.
 
+## Despliegue (Azure Static Web Apps + GitHub Actions, 2026-08-31)
+
+- Repo: https://github.com/yonn28/cocina-sherpa-web (público, rama `main`).
+- Azure: suscripción "Subscription 2" (`845d5d6a-4b6e-47ed-a3fc-8cba460c86fa`),
+  resource group `rg-cocina-sherpa` (East US 2), Static Web App
+  `cocina-sherpa-web` → `https://victorious-sky-01570270f.5.azurestaticapps.net`.
+- Autenticación del pipeline: **service principal con OIDC** (sin client
+  secret), app registration `cocina-sherpa-web-gh-actions`
+  (appId `60512089-0f14-4ffe-8225-71e3514f7a9b`), con una federated
+  credential limitada a `repo:yonn28/cocina-sherpa-web:ref:refs/heads/main`
+  y rol `Contributor` solo sobre el resource group `rg-cocina-sherpa`
+  (no a nivel de suscripción).
+- Secretos en GitHub (Settings → Secrets → Actions):
+  `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, `AZURE_SUBSCRIPTION_ID`. No hay
+  ningún secreto de larga duración ni el token de despliegue de la SWA
+  guardado como secret — el workflow lo pide en caliente en cada corrida
+  con `az staticwebapp secrets list` usando la sesión OIDC, y lo enmascara
+  con `::add-mask::`.
+- Workflow: `.github/workflows/azure-static-web-apps.yml`. Se dispara con
+  cada push a `main` (o manualmente con "Run workflow"). Como el sitio no
+  tiene build, usa `skip_app_build: true` y sube el contenido de la raíz
+  del repo tal cual (`app_location: "/"`).
+- Para agregar una clase nueva y que quede publicada: hacer los cambios en
+  `js/data.js` + `img/clase-XX/` como se explicó arriba, luego
+  `git add -A && git commit -m "..." && git push` — el pipeline se encarga
+  del resto.
+- Si algún día se borra o recrea el Static Web App, el nombre/resource
+  group deben coincidir con los que usa el workflow, o hay que actualizar
+  el YAML.
+
 ## Decisiones de diseño a respetar
 
 - Paleta cálida definida como variables CSS en `:root` de
