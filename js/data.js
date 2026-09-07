@@ -32,6 +32,18 @@ const CLASES = [
       "Sal del Himalaya (uso decorativo) y sal de mesa",
     ],
 
+    recursos: [
+      { archivo: "materiales/fondos-basicos.pdf", tipo: "PDF", nombre: "Fondos básicos", descripcion: "Material de referencia para fondos claros, oscuros y sus bases." },
+      { archivo: "materiales/sopa-thai.pdf", tipo: "PDF", nombre: "Sopa thai", descripcion: "Apoyo para la sopa asiática trabajada en clase." },
+      { archivo: "materiales/guia-de-cuchillos.pdf", tipo: "PDF", nombre: "Guía de cuchillos", descripcion: "Herramientas, agarre y seguridad durante los cortes." },
+      { archivo: "materiales/cortes-principales.pdf", tipo: "PDF", nombre: "Cortes principales de alta cocina", descripcion: "Referencia visual para los cortes y sus proporciones." },
+      { archivo: "materiales/tecnicas-cocina-basica.pdf", tipo: "PDF", nombre: "Técnicas de cocina básica", descripcion: "Repaso de técnicas y métodos de cocción." },
+      { archivo: "materiales/lenguaje-de-la-cocina.docx", tipo: "DOCX", nombre: "Lenguaje de la cocina", descripcion: "Glosario y vocabulario de trabajo en cocina." },
+      { archivo: "materiales/origen-cocina-alimentos.docx", tipo: "DOCX", nombre: "Origen de la cocina de alimentos", descripcion: "Lectura complementaria sobre el origen de la cocina." },
+      { archivo: "materiales/nutricion-y-alimentacion.docx", tipo: "DOCX", nombre: "Nutrición y alimentación", descripcion: "Material introductorio sobre alimentación y nutrición." },
+      { archivo: "materiales/tabla-de-tiempos.docx", tipo: "DOCX", nombre: "Tabla de tiempos", descripcion: "Referencia rápida para tiempos de cocción." },
+    ],
+
     conceptos: [
       {
         titulo: "Corte mirepoix",
@@ -228,6 +240,16 @@ Para el ajo porro (puerro): se coloca la hoja abajo, bien lavada, sobre la parte
       "Leche de vaca, nuez moscada y sal",
       "Pasta seca, de una sola forma por tanda",
       "Queso para gratinar los vegetales",
+    ],
+
+    recursos: [
+      { archivo: "materiales/pasta-fresca.pdf", tipo: "PDF", nombre: "Pasta fresca", descripcion: "Material de apoyo para tipos, preparación y cocción de pasta." },
+      { archivo: "materiales/guia-de-cuchillos.pdf", tipo: "PDF", nombre: "Guía de cuchillos", descripcion: "Herramientas, agarre y seguridad durante los cortes." },
+      { archivo: "materiales/cortes-principales.pdf", tipo: "PDF", nombre: "Cortes principales de alta cocina", descripcion: "Referencia visual para brunoise, juliana y otros cortes." },
+      { archivo: "materiales/tecnicas-cocina-basica.pdf", tipo: "PDF", nombre: "Técnicas de cocina básica", descripcion: "Repaso de escalfado, sofrito, gratinado y otros métodos." },
+      { archivo: "materiales/lenguaje-de-la-cocina.docx", tipo: "DOCX", nombre: "Lenguaje de la cocina", descripcion: "Glosario y vocabulario de trabajo en cocina." },
+      { archivo: "materiales/tabla-de-tiempos.docx", tipo: "DOCX", nombre: "Tabla de tiempos", descripcion: "Referencia rápida para tiempos de cocción." },
+      { archivo: "materiales/nutricion-y-alimentacion.docx", tipo: "DOCX", nombre: "Nutrición y alimentación", descripcion: "Lectura complementaria sobre alimentación y nutrición." },
     ],
 
     conceptos: [

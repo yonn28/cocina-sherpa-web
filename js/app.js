@@ -54,6 +54,7 @@ function vistaInicio() {
 const TABS = [
   { key: "conceptos", label: "Conceptos clave" },
   { key: "materiales", label: "Materiales" },
+  { key: "recursos", label: "Material de apoyo" },
   { key: "pasos", label: "Paso a paso" },
   { key: "recetas", label: "Recetas" },
   { key: "galeria", label: "Galería" },
@@ -72,6 +73,20 @@ function vistaClase(id) {
     <ul class="materiales-list">
       ${c.materiales.map((m) => `<li>${escapeHtml(m)}</li>`).join("")}
     </ul>`;
+
+  const panelRecursos = `
+    <div class="recursos-list">
+      ${(c.recursos || []).map((r) => `
+        <a class="recurso-link" href="${r.archivo}" target="_blank" rel="noopener">
+          <span class="recurso-tipo">${escapeHtml(r.tipo)}</span>
+          <span class="recurso-info">
+            <strong>${escapeHtml(r.nombre)}</strong>
+            <span>${escapeHtml(r.descripcion)}</span>
+          </span>
+          <span class="recurso-abrir">Abrir ↗</span>
+        </a>
+      `).join("")}
+    </div>`;
 
   const panelConceptos = c.conceptos.map((cn) => `
     <div class="concepto-card">
@@ -134,6 +149,7 @@ function vistaClase(id) {
   const panelesPorTab = {
     conceptos: panelConceptos,
     materiales: panelMateriales,
+    recursos: panelRecursos,
     pasos: panelPasos,
     recetas: panelRecetas,
     galeria: panelGaleria,

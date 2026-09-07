@@ -320,6 +320,62 @@ img { max-width: 100%; display: block; }
   flex-shrink: 0;
 }
 
+/* ---------- material de apoyo ---------- */
+.recursos-list {
+  display: grid;
+  gap: 10px;
+}
+
+.recurso-link {
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.recurso-link:hover {
+  border-color: var(--terracotta);
+  transform: translateY(-1px);
+}
+
+.recurso-tipo {
+  color: var(--terracotta-dark);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.recurso-info {
+  display: grid;
+  gap: 3px;
+}
+
+.recurso-info strong {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+
+.recurso-info span {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.recurso-abrir {
+  color: var(--terracotta-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 /* ---------- conceptos ---------- */
 .concepto-card {
   background: var(--paper);
@@ -561,4 +617,6 @@ img { max-width: 100%; display: block; }
   .app { padding: 28px 16px 60px; }
   .tabs { gap: 2px; }
   .tab-btn { padding: 8px 10px; font-size: 0.86rem; }
+  .recurso-link { grid-template-columns: 48px 1fr; }
+  .recurso-abrir { grid-column: 2; }
 }
