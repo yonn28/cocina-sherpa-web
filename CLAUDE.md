@@ -154,6 +154,46 @@ el usuario le da play — por eso `<video preload="none">` en `app.js`),
   `C:\Program Files\GitHub CLI\gh.exe`) — en este entorno el PATH de una
   sesión no siempre se refresca después de instalar algo nuevo.
 
+## Clase 2 (2026-09-07): salsas madres
+
+Los materiales llegaron en `../clase2/` con la misma forma que la clase 1
+(audios y videos de WhatsApp), más el `transcribir.py` y el `api_key.txt`
+ya copiados ahí. Contenido: dos salsas madres (pomodoro y bechamel),
+cocción de pasta y los cortes (brunoise de cebolla, pimentón y zanahoria).
+Los instructores son distintos a los de la clase 1: Sebastián y su
+compañera.
+
+**Gotcha importante para las próximas clases:** la transcripción NO se
+puede correr desde la sesión de Claude. Ni el contenedor de Claude ni la
+VM Linux del puente a este equipo pueden salir a `api.openai.com` — el
+proxy de egreso responde 403 al CONNECT. `pypi.org` sí pasa, así que no
+es que no haya red: es una lista de permitidos. El paso de transcribir
+hay que lanzarlo desde PowerShell en Windows:
+
+```powershell
+cd "$env:USERPROFILE\Desktop\cocina-sherpa\claseN"; python transcribir.py
+```
+
+Tampoco sirve pedirle a Claude que maneje la terminal por control del
+escritorio: los terminales solo se pueden granular en modo "click" (ver
+pero no escribir), justamente para que un agente no ejecute comandos.
+
+Otras dos cosas que se aprendieron armando esta clase:
+
+- Los procesos en segundo plano (`nohup ... &`) NO sobreviven entre
+  llamadas de `device_bash`: cada llamada es un sandbox nuevo. Hay que
+  comprimir los videos por tandas dentro de una misma llamada (3-4 videos
+  entran de sobra en el límite de ~45 s).
+- Los pósters de los videos salen mucho mejor tomados a la mitad del clip
+  que en el segundo 1, que es lo que decía la receta original: al segundo
+  1 varios clips todavía muestran una tabla vacía o el piso. Se usó entre
+  35% y 75% de la duración según el clip.
+- Elegir qué video es cuál **por la imagen se presta a error**: tres de
+  los siete clips de esta clase mostraban algo distinto de lo que el chef
+  estaba explicando en el audio (el que parecía un fondo hirviendo era en
+  realidad la explicación del punto al dente de la pasta). Hay que mirar
+  la transcripción de cada video antes de titularlos.
+
 ## Decisiones de diseño a respetar
 
 - Paleta cálida definida como variables CSS en `:root` de
