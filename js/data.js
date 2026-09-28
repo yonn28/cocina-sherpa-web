@@ -447,4 +447,189 @@ La chef también advirtió a los hombres del grupo sobre la semilla del tomate y
 
 La salsa que quedó se puede utilizar después para pastas, para carnes y para pescados. El plato del día: pasta y vegetales gratinados.`,
   },
+  {
+    id: "clase-03",
+    numero: 3,
+    titulo: "Parrilla: pollo, carnes y chimichurri",
+    fecha: "2026-09-28",
+    resumen:
+      "Salmuera y adobos para pollo, manejo de la parrilla, cortes de res, chorizos y preparación de chimichurri.",
+    portada: "video/clase-03/pollo-en-parrilla-poster.jpg",
+
+    materiales: [
+      "Parrilla con carbón y utensilios para manipular las brasas",
+      "Pollo en piezas y agua para preparar la salmuera",
+      "Sal para la salmuera y para ajustar los aderezos",
+      "Ajo en polvo, paprika, pimienta, orégano y comino",
+      "Curry y yogur como variantes para el adobo del pollo",
+      "Cebolla, ajo, cilantro, perejil, vinagre y aceite para el chimichurri",
+      "Pimentón para asar y agregar a la salsa, si se desea",
+      "Termómetro de cocina para comprobar la cocción del pollo",
+      "Cuchillo, tabla y recipientes para la mise en place",
+    ],
+
+    recursos: [],
+
+    conceptos: [
+      {
+        titulo: "Salmuera rápida y planificada",
+        texto:
+          "Para una salmuera rápida se explicó una concentración del 10% del peso total de agua y pollo, por un máximo aproximado de una hora. Si se deja desde la noche anterior, se baja al 3% para evitar que el pollo quede demasiado salado.",
+      },
+      {
+        titulo: "El adobo se ajusta al gusto",
+        texto:
+          "La mezcla seca de la clase llevó ajo en polvo, paprika, sal, pimienta, orégano y apenas comino. El curry aporta color; también se mostró el yogur como otra forma de adobar el pollo. Las cantidades se ajustan al volumen de carne y a la intensidad buscada.",
+      },
+      {
+        titulo: "Cortes y calidad de la carne",
+        texto:
+          "Las categorías de los cortes describen su uso y el tipo de cocción que suelen necesitar, no son una escala de calidad. Un corte magro como el lomo puede quedar seco si se cocina de más; cortes con más tejido, como las costillas, pueden quedar muy tiernos con una cocción más larga y adecuada.",
+      },
+      {
+        titulo: "Control del fuego y de la cocción",
+        texto:
+          "La parrilla necesita buen flujo de aire y una cocción controlada, no apresurada. Se acomodan las piezas de forma pareja y se voltea el pollo cuando la cara que está sobre la parrilla ya está cocida. El color exterior no confirma por sí solo que el centro esté listo: conviene comprobarlo con un termómetro.",
+      },
+      {
+        titulo: "El aceite va al final del chimichurri",
+        texto:
+          "Primero se mezclan la sal, los ingredientes picados y el vinagre; el aceite se agrega después. Así el ácido y los condimentos entran en contacto con los ingredientes antes de que el aceite los recubra. Dejar reposar la salsa ayuda a integrar los sabores.",
+      },
+      {
+        titulo: "El chimichurri debe ser ácido",
+        texto:
+          "Es una salsa fresca, con hierbas, cebolla, ajo, vinagre y bastante aceite. Debe conservar un punto ácido y se puede adaptar, por ejemplo, con pimentón asado. Al probarlo recién hecho, cada ingrediente se percibe por separado; el reposo cambia ese balance.",
+      },
+      {
+        titulo: "Chorizo siciliano",
+        texto:
+          "Se presentó una variedad con hinojo y un toque leve de picante, similar a la salchicha italiana usada en algunas pizzas. La clase también comparó chorizos de distintas regiones y perfiles de sabor.",
+      },
+    ],
+
+    pasos: [
+      {
+        titulo: "Preparar la salmuera",
+        detalle:
+          "Disolver la sal en el agua y sumergir el pollo. Para el método rápido, usar la concentración del 10% explicada en clase y limitar el tiempo a alrededor de una hora; para dejarlo toda la noche, bajar al 3%. Retirar y escurrir antes de adobar.",
+      },
+      {
+        titulo: "Mezclar el adobo",
+        detalle:
+          "Combinar ajo en polvo, paprika, sal, pimienta, orégano y una cantidad pequeña de comino. Probar y ajustar al volumen de pollo. El curry puede aportar color y el yogur puede usarse como variante para cubrir y sazonar las piezas.",
+      },
+      {
+        titulo: "Encender y preparar la parrilla",
+        detalle:
+          "Dejar que el carbón tome temperatura y asegurar que la parrilla tenga salida de humo. Limpiar la superficie caliente con un cepillo apropiado o con cebolla, según la demostración de clase.",
+      },
+      {
+        titulo: "Cocinar el pollo con calma",
+        detalle:
+          "Acomodar las piezas con la piel hacia arriba y procurar que todas entren en un intervalo corto para que avancen de manera pareja. Evitar que el fuego las arrebate; voltear cuando la primera cara ya esté cocida y comprobar el centro con un termómetro.",
+      },
+      {
+        titulo: "Preparar el chimichurri",
+        detalle:
+          "Picar la cebolla y las hierbas, majar el ajo y mezclar con sal y vinagre. Agregar el aceite al final. Se puede sumar pimentón asado; dejar reposar antes de probar y corregir el balance ácido y salado.",
+      },
+      {
+        titulo: "Comparar cortes y sabores",
+        detalle:
+          "Probar las carnes y los chorizos atendiendo al corte, la cantidad de grasa y el método de cocción. La ternura depende tanto del corte como de cocinarlo de la manera que necesita.",
+      },
+    ],
+
+    recetas: [
+      {
+        nombre: "Pollo en salmuera y adobo seco",
+        notas:
+          "Salmuera rápida al 10% del peso total de agua y pollo por hasta una hora, o al 3% para reposar toda la noche. Escurrir y cubrir con ajo en polvo, paprika, sal, pimienta, orégano y una pizca de comino. Cocinar a la parrilla y comprobar la temperatura interna.",
+      },
+      {
+        nombre: "Chimichurri de la clase",
+        notas:
+          "Cebolla, ajo majado, cilantro y perejil picados, vinagre, sal y aceite. Mezclar primero los ingredientes con el vinagre y añadir el aceite al final. El pimentón asado es una variación posible. Dejar reposar antes de servir.",
+      },
+      {
+        nombre: "Aderezo de especias para pollo",
+        notas:
+          "Ajo en polvo, paprika, pimienta, orégano, sal y muy poco comino. Se puede sumar curry para dar color o usar yogur como parte del adobo. No se dieron proporciones fijas: ajustar según la cantidad de pollo.",
+      },
+    ],
+
+    galeria: [
+      { src: "video/clase-03/pollo-en-parrilla-poster.jpg", alt: "Pollo colocado sobre la parrilla durante la clase" },
+      { src: "video/clase-03/preparar-chimichurri-poster.jpg", alt: "Preparación del chimichurri" },
+      { src: "video/clase-03/aderezo-untable-poster.jpg", alt: "Textura del aderezo para el pollo" },
+      { src: "video/clase-03/cortar-pimenton-poster.jpg", alt: "Corte de pimentón para las preparaciones" },
+      { src: "video/clase-03/limpiar-parrilla-poster.jpg", alt: "Limpieza de la parrilla" },
+    ],
+
+    videos: [
+      {
+        src: "video/clase-03/preparar-chimichurri.mp4",
+        poster: "video/clase-03/preparar-chimichurri-poster.jpg",
+        titulo: "Mezclar el chimichurri",
+        descripcion: "Se incorporan los ingredientes picados y se deja reposar la salsa antes de probarla.",
+      },
+      {
+        src: "video/clase-03/cortar-pimenton.mp4",
+        poster: "video/clase-03/cortar-pimenton-poster.jpg",
+        titulo: "Cortar el pimentón",
+        descripcion: "Retirar las semillas, estabilizar la pieza y sacar tiras delgadas antes de picar.",
+      },
+      {
+        src: "video/clase-03/majar-ajo.mp4",
+        poster: "video/clase-03/majar-ajo-poster.jpg",
+        titulo: "Majar el ajo",
+        descripcion: "Majar es convertir el ajo en una pasta para que sus aceites se integren en la salsa.",
+      },
+      {
+        src: "video/clase-03/pollo-en-parrilla.mp4",
+        poster: "video/clase-03/pollo-en-parrilla-poster.jpg",
+        titulo: "Poner el pollo en la parrilla",
+        descripcion: "Acomodar las piezas con la piel hacia arriba y evitar que el fuego las arrebate.",
+      },
+      {
+        src: "video/clase-03/limpiar-parrilla.mp4",
+        poster: "video/clase-03/limpiar-parrilla-poster.jpg",
+        titulo: "Limpiar la parrilla",
+        descripcion: "La demostración compara el cepillo para parrilla caliente con la limpieza usando cebolla.",
+      },
+      {
+        src: "video/clase-03/aderezo-untable.mp4",
+        poster: "video/clase-03/aderezo-untable-poster.jpg",
+        titulo: "Revisar la textura del aderezo",
+        descripcion: "La mezcla debe quedar untable, no tan firme como una pasta seca.",
+      },
+      {
+        src: "video/clase-03/voltear-pollo.mp4",
+        poster: "video/clase-03/voltear-pollo-poster.jpg",
+        titulo: "Voltear el pollo",
+        descripcion: "Cuando la cara cocida se desprende con facilidad, es momento de girar la pieza.",
+      },
+      {
+        src: "video/clase-03/encender-parrilla.mp4",
+        poster: "video/clase-03/encender-parrilla-poster.jpg",
+        titulo: "Encender la parrilla",
+        descripcion: "Demostración de encendido de las brasas; usa solo métodos y productos destinados a parrilla.",
+      },
+    ],
+
+    transcripcionArchivo: "transcripciones/clase-03/completa.txt",
+
+    transcripcion: `En esta clase trabajamos la parrilla, la salmuera para el pollo, los adobos, distintos cortes de carne y el chimichurri. Antes de cocinar, se explicó que la salmuera rápida puede prepararse al 10% del peso total de agua y pollo y dejarse alrededor de una hora como máximo. Para una preparación desde la noche anterior se baja al 3%, porque una concentración alta durante tantas horas dejaría la carne demasiado salada.
+
+Para el adobo seco se mezclaron ajo en polvo, paprika, sal, pimienta, orégano y muy poco comino. Las cantidades se ajustan a la cantidad de pollo y al gusto; el curry puede aportar color. También se mostró el yogur como una variante para adobar. Después de la salmuera se retira el pollo del agua, se escurre y se masajea con el aderezo.
+
+Mientras se alistan las brasas, se habló de la ventilación y del tiro de la parrilla. El pollo se coloca con la piel hacia arriba y se cocina sin apresurarlo ni dejar que el fuego lo arrebate. Conviene acomodar las piezas en un intervalo corto para que avancen parejo. Se voltea cuando la cara que estaba contra la parrilla ya está cocida; para verificar el centro, se recomendó usar un termómetro y no guiarse solo por el color exterior.
+
+La clase comparó cortes de res y aclaró que las categorías describen el uso y la cocción que requiere cada corte, no su calidad. El lomo es naturalmente tierno, pero puede secarse si se cocina de más; cortes como las costillas pueden quedar muy tiernos cuando reciben una cocción más larga y adecuada. También se probaron chorizos de distintos estilos, incluido uno siciliano con hinojo y un toque leve de picante.
+
+Para el chimichurri se picaron cebolla y hierbas, se majó el ajo y se incorporaron sal y vinagre antes del aceite. El orden importa: si el aceite recubre primero los ingredientes, dificulta que el vinagre y los demás sabores se integren. Se puede agregar pimentón asado y ajustar la acidez al gusto. Recién preparado cada ingrediente se nota por separado; al reposar, la salsa se integra mejor.
+
+También se practicaron cortes pequeños y se explicó que majar significa convertir un ingrediente, como el ajo, en una pasta. Para limpiar la parrilla se mostró el uso de un cepillo apropiado y la alternativa de frotar cebolla sobre la superficie caliente.`,
+  },
 ];
