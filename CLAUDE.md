@@ -194,6 +194,18 @@ Otras dos cosas que se aprendieron armando esta clase:
   realidad la explicación del punto al dente de la pasta). Hay que mirar
   la transcripción de cada video antes de titularlos.
 
+## Clase 4 (2026-10-05): paella de mariscos — última clase
+
+Llegó en `../clase 4/` (con espacio) solo con audios y 3 videos, sin
+fotos ni `transcribir.py`; se copiaron `transcribir.py` y `api_key.txt`
+desde `../clase2/`. Esta vez Claude Code corría nativo en Windows y la
+transcripción **sí** se pudo lanzar desde la sesión (el gotcha de la
+clase 2 aplica solo al contenedor/VM). Uno de los videos dura 17 min:
+en vez de subirlo entero se recortó en 5 clips con `-ss`/`-t` usando
+hojas de contacto (`fps=1/6,tile=...`) para ubicar cada momento. El clip
+de la paella terminada traía audio de YouTube de fondo, así que se
+publicó sin audio (`-an`). La galería usa los pósters de los videos.
+
 ## Decisiones de diseño a respetar
 
 - Paleta cálida definida como variables CSS en `:root` de

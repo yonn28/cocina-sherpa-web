@@ -632,4 +632,216 @@ Para el chimichurri se picaron cebolla y hierbas, se majó el ajo y se incorpora
 
 También se practicaron cortes pequeños y se explicó que majar significa convertir un ingrediente, como el ajo, en una pasta. Para limpiar la parrilla se mostró el uso de un cepillo apropiado y la alternativa de frotar cebolla sobre la superficie caliente.`,
   },
+  {
+    id: "clase-04",
+    numero: 4,
+    titulo: "Paella de mariscos",
+    fecha: "2026-10-05",
+    resumen:
+      "Última clase: paella de mariscos con fondo de pescado, glasa y desglasado, cocción por expansión y concentración, y salsas comodín como el pesto y el baba ganoush.",
+    portada: "video/clase-04/paella-terminada-poster.jpg",
+
+    materiales: [
+      "Paellera y fogón de gas",
+      "Arroz parbolizado",
+      "Fondo de pescado (cabezas y retazos de salmón, zanahoria, cebolla, pimentón, pimienta negra)",
+      "Mezcla de mariscos congelados: anillos de calamar, minipulpos y camarones",
+      "Langostinos enteros para decorar",
+      "Tomate rallado",
+      "Cebolla en brunoise y pimentón rojo en bastones",
+      "Ajo",
+      "Aceite de achiote (o unas hebras de azafrán)",
+      "Paprika, sal, pimienta y cardamomo",
+      "Papel aluminio para tapar la paellera",
+    ],
+
+    recursos: [],
+
+    conceptos: [
+      {
+        titulo: "La paella es la herramienta",
+        texto:
+          "Paella es el nombre de la sartén ancha y baja; lo que se come es arroz a la paella. Su diferencia con un arroz con pollo en caldero es la extensión: el arroz queda en una capa delgada con mucha superficie en contacto con el calor. La valenciana, con denominación de origen, lleva conejo y pollo; la de esta clase fue de mariscos.",
+      },
+      {
+        titulo: "Expansión y concentración",
+        texto:
+          "Si se empieza desde agua fría (expansión), el sabor sale del producto al líquido: sirve para una sopa. Si se empieza en agua caliente o sobre superficie caliente (concentración), el sabor se queda dentro: sirve para una pechuga que se va a desmechar para ensalada. El arroz es una cocción mixta: arranca sofriendo en caliente y termina cocinándose en el líquido.",
+      },
+      {
+        titulo: "Si cambia de color, cambia de sabor",
+        texto:
+          "El dorado de carnes, pollo o pan (efecto Maillard) es sabor. Por eso la carne para guiso se sofríe antes, y por eso los mariscos se doran primero en la paellera y se apartan, en vez de cocinarse solo en el líquido.",
+      },
+      {
+        titulo: "Glasa y desglasar",
+        texto:
+          "La glasa (no grasa) es lo que queda pegado al fondo de la olla después de dorar. Desglasar es despegarlo con un líquido: vino, cerveza, jugo de naranja o, en la paella, el tomate rallado. Para una pechuga a la plancha, desglasar con un chorro de vino y mantequilla, reducir y colar da una salsa rápida.",
+      },
+      {
+        titulo: "Sazonar por capas",
+        texto:
+          "Cada ingrediente tiene que saber a algo por separado: se sazonan los mariscos, el sofrito y el líquido, con mano medida porque todo se suma al final. Si solo se sala el caldo, el arroz queda rico pero la proteína sabe a nada; igual que la lechuga y el tomate de una hamburguesa, que deberían llevar su sal y aceite.",
+      },
+      {
+        titulo: "Líquido una sola vez y sin mover",
+        texto:
+          "A diferencia del risotto, en la paella el fondo se agrega una sola vez, apenas cubriendo el arroz, y no se revuelve más. Se usa arroz parbolizado porque aguanta más tiempo en la paellera sin pasarse. El socarrat (el pegado) sale del arroz que se fríe en el fondo, así que más aceite da más socarrat.",
+      },
+      {
+        titulo: "Color natural: achiote o azafrán",
+        texto:
+          "El aceite de achiote se hace calentando a fuego muy lento las semillas en aceite hasta que se pinta de naranja; es el colorante natural local. Lo clásico es el azafrán: dos o tres hebras en el aceite tiñen toda la paella. El tomate rallado, no picado, también aporta color y humedad sin verse.",
+      },
+      {
+        titulo: "Un ingrediente nuevo al mes",
+        texto:
+          "Si la alacena solo tiene comino, ajo y color, todo sabe igual. La recomendación fue comprar una o dos especias nuevas (cardamomo, pimienta de Sichuan, pimienta rosada, za'atar...) y preguntar a quien las vende cómo usarlas.",
+      },
+    ],
+
+    pasos: [
+      {
+        titulo: "Preparar el fondo de pescado",
+        detalle:
+          "Cocinar cabezas y retazos de salmón con zanahoria, cebolla, pimentón y pimienta negra. Las cabezas y espinazos suelen venderse baratos en las pescaderías porque para ellos son desperdicio.",
+      },
+      {
+        titulo: "Mise en place",
+        detalle:
+          "Rallar el tomate (no picarlo), cortar la cebolla en brunoise y el pimentón en bastones (tapas, pies, abrir como libro, bastones). Hoy no hace falta quitarle la membrana al pimentón.",
+      },
+      {
+        titulo: "Dorar los mariscos y apartarlos",
+        detalle:
+          "Calentar bien la paellera con aceite de achiote y dorar primero los langostinos y mariscos crudos hasta que pasen de grises a rojos. Puede encenderse una llama: se controla con la cuchara y una campana limpia. Retirar los langostinos para decorar al final.",
+      },
+      {
+        titulo: "Desglasar con el tomate",
+        detalle:
+          "Agregar el tomate rallado para despegar la glasa del fondo; da sabor y mucho color. Mover rápido porque la paellera es muy abrasiva y se quema fácil. Sazonar con sal y pimienta con moderación.",
+      },
+      {
+        titulo: "Sofrito y mariscos",
+        detalle:
+          "Añadir la cebolla y la mezcla de mariscos. El ajo va de último entre los vegetales porque se quema rápido y amarga el arroz.",
+      },
+      {
+        titulo: "Nacarar el arroz",
+        detalle:
+          "Agregar el arroz parbolizado y mezclarlo con el sofrito para que se impregne de grasa y color.",
+      },
+      {
+        titulo: "Agregar el fondo una sola vez",
+        detalle:
+          "Verter el fondo de pescado hasta que sobrepase apenas el arroz, distribuir parejo y no volver a mover. Ajustar con sal, paprika y una vaina de cardamomo apenas abierta para aroma.",
+      },
+      {
+        titulo: "Decorar, tapar y reposar",
+        detalle:
+          "Cuando se seque como un arroz normal, decorar con los langostinos y el pimentón en forma de reloj, bajar el fuego, tapar con papel aluminio y dejar unos diez minutos con temporizador.",
+      },
+    ],
+
+    recetas: [
+      {
+        nombre: "Paella de mariscos",
+        notas:
+          "Fondo de pescado, arroz parbolizado, mezcla de mariscos congelados, langostinos, tomate rallado, cebolla, pimentón, ajo, aceite de achiote, paprika, sal, pimienta y cardamomo. Dorar proteínas y apartar, desglasar con tomate, sofreír, nacarar el arroz, agregar el fondo una sola vez sin mover, decorar y tapar con aluminio a fuego bajo. Mejora al día siguiente: los arroces agradecen la nevera.",
+      },
+      {
+        nombre: "Pesto económico",
+        notas:
+          "Albahaca, queso parmesano, aceite de oliva y ajo. Los piñones del original son costosos: se reemplazan por semillas de girasol, maní sin sal o nueces, que además espesan. Usos: pasta con dos cucharadas de pesto y parmesano; sándwich de pan integral con ensalada de atún (mayonesa o yogur, apio, cebolla), pesto en una tapa y mostaza en la otra; vinagreta con un poco de azúcar.",
+      },
+      {
+        nombre: "Baba ganoush",
+        notas:
+          "Quemar la berenjena directo en la hornilla de gas hasta que la cáscara se carbonice; abrir con cuidado por el vapor, quitar cáscara y semillas y procesar con aceite de oliva, sal y pimienta (opcional ajo y picante). Sirve para mojar pan pita, como base de sándwich o mezclada con yogur.",
+      },
+      {
+        nombre: "Pan pita con za'atar",
+        notas:
+          "Pan pita con mantequilla, queso mozzarella y za'atar, tostado. Desayuno típico árabe.",
+      },
+      {
+        nombre: "Salsa rápida de desglasado",
+        notas:
+          "Después de dorar una pechuga en sartén, agregar un chorro de vino, cerveza o jugo de naranja y mantequilla; despegar lo pegado, espesar opcionalmente con una cucharadita de maicena, reducir y colar. Con cerveza le van bien unos champiñones.",
+      },
+    ],
+
+    galeria: [
+      { src: "video/clase-04/paella-terminada-poster.jpg", alt: "Paella de mariscos terminada y decorada con pimentón" },
+      { src: "video/clase-04/flambear-mariscos-poster.jpg", alt: "Llama al dorar los mariscos en la paellera" },
+      { src: "video/clase-04/mariscos-y-arroz-poster.jpg", alt: "Sofrito con mariscos en la paellera" },
+      { src: "video/clase-04/agregar-el-fondo-poster.jpg", alt: "Agregando el fondo de pescado al arroz" },
+      { src: "video/clase-04/decorar-y-tapar-poster.jpg", alt: "Paella decorada antes de taparla con aluminio" },
+    ],
+
+    videos: [
+      {
+        src: "video/clase-04/flambear-mariscos.mp4",
+        poster: "video/clase-04/flambear-mariscos-poster.jpg",
+        titulo: "Dorar los mariscos",
+        descripcion: "La mise en place y los mariscos sobre la paellera caliente; la llama que se levanta se controla con la cuchara.",
+      },
+      {
+        src: "video/clase-04/desglasar-con-tomate.mp4",
+        poster: "video/clase-04/desglasar-con-tomate-poster.jpg",
+        titulo: "Desglasar con tomate rallado",
+        descripcion: "Se retiran los langostinos y el tomate despega la glasa del fondo, dando color a la paella.",
+      },
+      {
+        src: "video/clase-04/mariscos-y-arroz.mp4",
+        poster: "video/clase-04/mariscos-y-arroz-poster.jpg",
+        titulo: "Mariscos y sofrito",
+        descripcion: "Entra la mezcla de mariscos congelados y se integra con el sofrito antes del arroz.",
+      },
+      {
+        src: "video/clase-04/agregar-el-fondo.mp4",
+        poster: "video/clase-04/agregar-el-fondo-poster.jpg",
+        titulo: "Agregar el fondo",
+        descripcion: "El fondo de pescado va una sola vez, apenas cubriendo el arroz, y no se vuelve a mover.",
+      },
+      {
+        src: "video/clase-04/cardamomo.mp4",
+        poster: "video/clase-04/cardamomo-poster.jpg",
+        titulo: "Cardamomo y especias",
+        descripcion: "Se abre apenas la vaina de cardamomo para aromatizar, y la invitación a probar un ingrediente nuevo cada mes.",
+      },
+      {
+        src: "video/clase-04/decorar-y-tapar.mp4",
+        poster: "video/clase-04/decorar-y-tapar-poster.jpg",
+        titulo: "Decorar y tapar con aluminio",
+        descripcion: "Pimentón en forma de reloj, fuego bajo y papel aluminio con temporizador de diez minutos.",
+      },
+      {
+        src: "video/clase-04/paella-terminada.mp4",
+        poster: "video/clase-04/paella-terminada-poster.jpg",
+        titulo: "La paella terminada",
+        descripcion: "Resultado final (clip sin audio).",
+      },
+    ],
+
+    transcripcionArchivo: "transcripciones/clase-04/completa.txt",
+
+    transcripcion: `La última clase fue de arroces: paella de mariscos. Para empezar se repasaron las técnicas de cocción. Hay cocción por expansión, que empieza desde el frío, y por concentración, que empieza desde el calor. Si se quiere una sopa de pollo, se arranca con agua fría para que el sabor pase al líquido; si se quiere una pechuga para desmechar en ensalada, se mete directo en agua caliente para que el sabor se quede dentro. El arroz es una cocción mixta: empieza en caliente con los sofritos y termina cocinándose en un líquido.
+
+También se recordó que el gulash no es un corte de carne sino una sopa húngara picante, y que para una carne guisada conviene sofreír primero la carne. Cuando un producto cambia de color, cambia de sabor: el dorado del pollo, las rayitas de la hamburguesa o el pan tostado son el efecto Maillard. Todo lo que queda pegado en la olla es una oportunidad de sabor: después de dorar una pechuga se agrega un chorro de vino, cerveza o jugo de naranja con mantequilla, se despega, se reduce y se cuela, y queda una salsa.
+
+Paella es la herramienta, no la comida: se come arroz a la paella. La diferencia con un arroz con pollo en caldero es la extensión; con más superficie hay más contacto con el calor y más socarrat, el pegado, que sale del arroz frito. La paella valenciana, con denominación de origen, lleva conejo y pollo; la de la clase fue de mariscos, decorada con pimentón en forma de reloj evocando las gambas que se ponen rojas al cocinarse.
+
+Se preparó un fondo de pescado con cabezas y retazos de salmón, zanahoria, cebolla, pimentón y pimienta negra. Se usó arroz parbolizado porque aguanta más tiempo en la paellera sin pasarse. El tomate se ralla, no se pica: su jugo termina de colorear el arroz. La cebolla va en brunoise y el pimentón en bastones.
+
+En la paellera caliente con aceite de achiote se doraron primero los langostinos y los mariscos crudos hasta que pasaron de grises a rojos, y se apartaron para decorar. Si el camarón congelado ya viene rosado en la bolsa, está precocido. Lo que se pega al fondo se llama glasa, y despegarlo es desglasar; aquí se desglasó con el tomate. Al añadir líquido puede saltar fuego, por eso la campana tiene que estar limpia: la limpieza también es seguridad. Hay que sazonar por capas y con medida, porque si solo se sala el líquido, la proteína queda sin sabor. Luego entraron la cebolla, la mezcla de mariscos y el ajo al final de los vegetales, para que no se queme.
+
+El fondo se agregó una sola vez, apenas cubriendo el arroz, y no se volvió a mover, a diferencia del risotto. Se ajustó con sal, paprika y una vaina de cardamomo apenas abierta para dar aroma. El achiote es el colorante natural local; lo clásico es el azafrán, del que bastan dos o tres hebras. Al final se decoró, se bajó el fuego y se tapó con papel aluminio unos diez minutos. Los arroces, como las ensaladas con papa y mayonesa, agradecen la nevera y saben mejor al día siguiente.
+
+Para comprar mariscos en Bogotá se recomendó el congelado, por ejemplo en Hipermar, que entrega a domicilio y vende cabezas de salmón para fondos.
+
+Fuera de la paella se compartieron recetas comodín. El pesto lleva albahaca, parmesano, aceite de oliva, ajo y piñones, que se pueden cambiar por maní sin sal, nueces o semillas de girasol. Con él sale una pasta rápida, un sándwich de atún en pan integral con pesto y mostaza, o una vinagreta para ensalada. El baba ganoush se hace quemando la berenjena en la hornilla, pelándola y procesándola con aceite de oliva, sal y pimienta. Y el pan pita con mantequilla, mozzarella y za'atar es un desayuno árabe típico.
+
+La recomendación final: comprar un ingrediente nuevo al mes, preguntar a quien vende especias cómo usarlo, y en un año la cocina va a ser otra. El grupo queda abierto un mes más para preguntas.`,
+  },
 ];
